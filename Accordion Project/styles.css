@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-blue: hsl(224, 84%, 70%);
+    --grayish-blue: hsl(224, 39%, 45%);
+    --dark-blue: hsl(250, 100%, 16%);
+}
+
+body {
+    background: linear-gradient(to left, rgb(1, 1, 135), white);
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-family: "Work Sans", serif;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 0;
+}
+
+button:hover {
+    color: darkblue;
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.faq-headline {
+    display: flex;
+    gap: 2rem;
+}
+
+.faq-headline h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.accordion-container .accordion-item:not(:last-child) {
+    border-bottom: 2px solid var(--light-blue);
+}
+
+.accordion-item .icons img {
+    min-width: 30px;
+    width: 10px;
+    height: 25px;
+}
+
+.accordion-item .icons .minus-icon {
+    display: none;
+}
+
+.accordion-description {
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+
+.accordion-description p {
+    color: var(--grayish-blue);
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 540px) {
+    body {
+        background-image: url(assets/images/background.png);
+    }
+}

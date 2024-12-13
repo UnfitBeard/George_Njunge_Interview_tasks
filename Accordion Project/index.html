@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="faq-headline" role="heading" aria-controls="h1">
+      <img src="assets/images/faq.png" id="header-image" height="50px" width="50px" alt="faqImage" />
+      <h1 id="heading1" aria-labelledby="faq-headline">FAQS</h1>
+    </div>
+    <nav>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button id="accordion-btn-1" class="accordion-btn" aria-expanded="false" aria-controls="accord-desc-1">
+            Who is George the UnfitBeard?
+            <div class="icons">
+              <img class="plus-icon btn-icon" src="assets/images/add.png" alt="">
+              <img class="minus-icon btn-icon" src="assets/images/minus(2).png" alt="">
+            </div>
+          </button> 
+          <div class="accordion-description" id="accord-desc-1" role="region" aria-labelledby="accordion-btn-1"
+            aria-hidden="true">
+            <p>George the UnfitBeard is an aspiring software engineer who is passionate about learning new technologies and improving skills in the tech field.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button id="accordion-btn-2" class="accordion-btn" aria-expanded="false" aria-controls="accord-desc-2">
+            What technologies do you work with?
+            <div class="icons">
+              <img class="plus-icon btn-icon" src="assets/images/add.png" alt="">
+              <img class="minus-icon btn-icon" src="assets/images/minus(2).png" alt="">
+            </div>
+          </button>
+          <div class="accordion-description" id="accord-desc-2" role="region" aria-labelledby="accordion-btn-2"
+            aria-hidden="true">
+            <p>George primarily works with HTML, CSS, JavaScript, and Python. He's also interested in learning frameworks like React, Django, and more!</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button id="accordion-btn-3" class="accordion-btn" aria-expanded="false" aria-controls="accord-desc-3">
+            How did you get started in software engineering?
+            <div class="icons">
+              <img class="plus-icon btn-icon" src="assets/images/add.png" alt="">
+              <img class="minus-icon btn-icon" src="assets/images/minus(2).png" alt="">
+            </div>
+          </button>
+          <div class="accordion-description" id="accord-desc-3" role="region" aria-labelledby="accordion-btn-3"
+            aria-hidden="true">
+            <p>George started coding as a hobby and then decided to pursue software engineering seriously through self-learning and online resources.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button id="accordion-btn-4" class="accordion-btn" aria-expanded="false" aria-controls="accord-desc-4">
+            What are your career goals?
+            <div class="icons">
+              <img class="plus-icon btn-icon" src="assets/images/add.png" alt="">
+              <img class="minus-icon btn-icon" src="assets/images/minus(2).png" alt="">
+            </div>
+          </button>
+          <div class="accordion-description" id="accord-desc-4" role="region" aria-labelledby="accordion-btn-4"
+            aria-hidden="true">
+            <p>George aims to work as a full-stack developer and contribute to innovative projects that can help improve people's lives through technology.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+  </div>
+  </nav>
+  <script src="script.js"></script>
+</body>
+
+</html>
